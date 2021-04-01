@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/*background-color: #352b48;*/
+	background-image: url('../img/calenderBg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Poppins', sans-serif;
+}
+
+.calender {
+	background: #81F781;
+	width: 300px;
+	height: auto;
+	box-sizing: border-box;
+	padding-top: 5px;
+	box-shadow: 5 10px 60px rgba(0,0,0,1);
+}
+
+.calender .image img {
+	position: relative;
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+	padding: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+
+.calender .image h2,
+.calender .image h3 {
+	margin: 0;
+	padding: 0;
+	text-shadow: 0 2px 2px rgba(0,0,0,.2);
+
+}
+.calender .image h3 {
+	font-weight: 500;
+}
+
+.calender .date {
+	/*width: 400px;*/
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+	grid-gap: 10px;
+	box-sizing: border-box;
+}
+
+.calender .date div {
+	display: flex;
+	justify-content: center;
+	height: 25px;
+	color: #262626;
+}
+
+.calender .date div.day {
+	font-weight: bold;
+}
+
+.calender .date div.day:first-child,
+.calender .date div.number:nth-child(7n+1) {
+	/*color: #ff685d;*/
+	font-weight: 700px;
+}
+
+.calender .date div.number.active,
+.calender .date div.number:hover {
+	background: #352b48;
+	color: #fff;
+	font-weight: 700px;
+	cursor: pointer; 
+}
+ 
+
+
+
+
+/*********MEDIA QUERY***********/
+
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+
+.calender .image img {
+	position: relative;
+	width: 300px;
+	height: 240px;
+	background-size: cover;
+	padding: 7px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.calender .image h3 {
+	font-weight: 350;
+}
+
+.calender .date div {
+	display: flex;
+	justify-content: center;
+	height: 20px;
+	color: #262626;
+  }
+
+}

@@ -1,0 +1,284 @@
+body {
+	background-image: url('../img/wish_pc2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+}
+#wish h1 {
+	line-height: 1.4;
+	text-align: center;
+	margin-top: 30px;
+	color: #111;
+	/*text-shadow: 1.5px 1.5px 1.5px #F1C40F ;*/
+	font-family: 'Bad Script', cursive;
+
+}
+#wish .maindiv {
+	width: 20%;
+	height: 375px;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+	background-image: url('../img/sliderFront1.jpg');
+	background-size: 100% 100%;
+	box-shadow: 1px 2px 10px #fff;	
+	animation: slider 28s infinite linear;
+
+}
+
+@keyframes slider {
+	0% {
+		background-image: url('../img/sliderFront1.jpg');
+	}
+	10% {
+		background-image: url('../img/slider_img1.jpg');
+	}
+	30% {
+		background-image: url('../img/slider_img2.jpg');
+	}
+	50% {
+		background-image: url('../img/slider_img3.jpg');
+	}
+	60% {
+		background-image: url('../img/slider_img4.jpeg');
+	}
+	80% {
+		background-image: url('../img/slider_img5.jpeg');
+	}
+	100% {
+		background-image: url('../img/slider_img6.jpeg');
+	}
+}
+
+
+#wish h1 {
+	
+}
+#wish h1 span {
+	margin: 0;
+	padding: 0;
+	animation: animate 5s linear infinite;
+}
+
+
+#wish h1 span:nth-child(1){
+	animation-delay: 0s;
+} 
+#wish h1 span:nth-child(2){
+	animation-delay: 0.25s;
+}
+#wish h1 span:nth-child(3){
+	animation-delay: 0.5s;
+}
+#wish h1 span:nth-child(4){
+	animation-delay: 0.75s;
+}
+#wish h1 span:nth-child(5){
+	animation-delay: 1s;
+}
+#wish h1 span:nth-child(6){
+	animation-delay: 1.25s;
+}
+#wish h1 span:nth-child(7){
+	animation-delay: 1.5s;
+}
+#wish h1 span:nth-child(8){
+	animation-delay: 1.75s;
+}
+#wish h1 span:nth-child(9){
+	animation-delay: 2s;
+} 
+#wish h1 span:nth-child(10){
+	animation-delay: 2.25s;
+}
+#wish h1 span:nth-child(11){
+	animation-delay: 2.5s;
+}
+#wish h1 span:nth-child(12){
+	animation-delay: 2.75s;
+}
+#wish h1 span:nth-child(13){
+	animation-delay: 3s;
+}
+#wish h1 span:nth-child(14){
+	animation-delay: 3.25s;
+}
+#wish h1 span:nth-child(15){
+	animation-delay: 3.5s;
+}
+#wish h1 span:nth-child(16){
+	animation-delay: 3.75s;
+}#wish h1 span:nth-child(17){
+	animation-delay: 4s;
+}
+#wish h1 span:nth-child(18){
+	animation-delay: 4.25s;
+}
+#wish h1 span:nth-child(19){
+	animation-delay: 4.5s;
+}
+#wish h1 span:nth-child(20){
+	animation-delay: 4.75s;
+}
+@keyframes animate {
+	0%, 100%{
+		color: #fff;
+		filter: blur(2px);
+		text-shadow: 0 0 10px  #ece60e,
+					 0 0 40px  #ece60e,
+					 0 0 80px  #ece60e,
+					 0 0 120px #ece60e,
+					 0 0 200px #ece60e,
+					 0 0 300px #ece60e,
+					 0 0 400px #ece60e,
+					 0 0 500px #ece60e,
+					 0 0 600px #ece60e,
+					 0 0 700px #ece60e,
+					 0 0 800px #ece60e,
+					 0 0 900px #ece60e,
+					 0 0 1000px #ece60e,
+					 0 0 1100px #ece60e,
+					 0 0 1200px #ece60e,
+					 0 0 1300px #ece60e,
+					 0 0 1400px #ece60e,
+					 0 0 1500px #ece60e,
+					 0 0 1600px #ece60e;
+					 /*0 0 1700px #00b3ff;*/
+
+	}
+	5%, 95%{
+		color: #111;
+		filter: blur(0px);
+		text-shadow: none;
+	}
+}
+
+#wish #button {
+	display: block;
+	border:  2px solid #67103F;
+	border-radius: 10px;
+	color: #fff;
+	width: auto;
+	height: auto;
+	background-color: #3724F0;
+	opacity: 0.7;
+	padding: 2px;
+	box-shadow:  3.5px 3.5px 3.5px #000;
+	margin: 0 auto;
+	margin-top: 440px;
+}
+#wish #button:hover {
+	background-color: #fff;
+	color: #3724F0;
+	font-weight: bold;
+}
+
+
+
+/*********MEDIA QUERY***********/
+
+
+/*medium device only*/
+@media (min-width: 992px) and (max-width: 1199px) {
+ 	#wish .maindiv {
+	width: 70%;
+	height: 320px;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+}
+#wish #button {
+	display: block;
+     
+	margin-top: 370px;
+}
+}
+/*small devixce only */
+@media (min-width: 768px) and (max-width: 991px) {
+	body {
+	background-image: url('../img/slider_bg_sm.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    }
+
+  #wish h1 {
+	font-size: 2.5rem;
+	line-height: 1.2;
+	text-align: center;
+	margin-top: 30px;
+	padding: 5px;
+}
+#wish .maindiv {
+	width: 80%;
+	height: 280px;
+	position: absolute;
+	left: 50%;
+	top: 37%;
+}
+#wish #button {
+	display: block;
+     
+	margin-top: 370px;
+}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	body {
+	background-image: url('../img/slider_bg_sm.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    }
+	#wish h1 {
+	font-size: 2rem;
+	line-height: 1.2;
+	text-align: center;
+	margin-top: 20px;
+	padding: 5px;
+}
+#wish .maindiv {
+	width: 70%;
+	height: 230px;
+	position: absolute;
+	left: 50%;
+	top: 32%;
+}
+#wish #button {
+	display: block;
+     
+	margin-top: 280px;
+}
+}
+
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+
+	body {
+	background-image: url('../img/slider_bg_sm.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    }
+	#wish h1 {
+	font-size: 1.3rem;
+	line-height: 1;
+	text-align: center;
+	margin-top: 10px;
+	padding: 5px;
+}
+#wish .maindiv {
+	width: 80%;
+	height:170px;
+	position: absolute;
+	left: 50%;
+	top: 28%;
+}
+#wish #button {
+	display: block;
+     
+	margin-top: 250px;
+}
+
+}
